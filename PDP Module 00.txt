@@ -1,0 +1,76 @@
+Ex 1. 
+test 1: (* 366 (* 24 
+        	(* 60 60 )))
+
+test 2: (+(* 183
+     		(* 24 
+          	 (* 60 60)))
+  	  (* 183
+     		(* 24 
+           	 (* 60 60))))
+
+test 3: (+ 
+ 		(+(* 31 
+      		     (* 7 
+         		 (* 24
+            		   (* 60 60))))
+   		  (* 30 
+     		     (* 4 
+         		 (* 24 
+                           (* 60 60))))) 
+ 		  (* 29 
+   		     (* 1 
+                         (* 24 
+                            (* 60 60)))))
+
+Ex 2:  (> (/ 100 3) 
+	(/ ( + 3 3) (+ 100 3)))
+
+Ex 3: (define (conversionToCelcius f) 
+        (* 
+          (- f 32) (/ 5 9)))
+
+Ex 4: (define (tip bill p) (* bill p))
+
+Ex 5: ; sq : Number -> Number
+      ; GIVEN: a Number as an argument
+      ; RETURNS: square of the given number
+      ; Example: 
+      ; (sq 2) => 4
+      ; (sq 10) => 100
+
+      ;Fn: (define (sq x) (* x x))
+
+Ex 6: ; quadratic-root : Number Number Number -> Number
+      ; GIVEN: three Numbers as arguments
+      ; RETURNS : quadratic root of the given numbers
+      ; Example:
+      ; (quadratic-root 1 2 0) => 0
+      ; (quadratic-root 1 4 8) => -2+2i
+
+      ; Fn: (define (quadratic-root a b c) 
+             (/ 
+              (+ 
+                (- b) (sqrt
+                  (- (sq b) (* 4 a c)))) (* 2 a)))
+
+Ex 7: (define (circumference r) (* 2 pi r))
+
+Ex 8: ; area of circle : Number -> Number
+      ; GIVEN: a radius as an argument
+      ; RETURNS: area of circle
+      ;Example:
+      ;(area 1) => #i3.141592653589793
+      ;(area 5) => #i78.53981633974483
+      ;(area 7) => #i153.93804002589985
+
+Ex 9: Example: (even? (remainder 10 3)) => false
+
+Ex 10: (define (sum x y z) 
+  (cond
+   [(and (> x y) (> z y)) (+ x z)]
+   [(and (> y x) (> z x)) (+ y z)]
+   [else (+ x y)]) )
+
+
+
